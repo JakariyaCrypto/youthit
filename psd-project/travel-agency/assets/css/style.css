@@ -1,0 +1,240 @@
+/********************* universal css ******************/
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Volkhov:wght@400;700&display=swap');
+
+/********************* css variables ******************/
+
+:root{
+	/*color*/
+	--title-color: #181E4B;
+	--third-title-color: #1E1D4C;
+	--text-color: #5E6282;
+	--btn-text-color: #FFFFFF;
+	--menu-color: #212832;
+
+	/*font-size & family*/
+	--heading-font: 'Volkhov', serif;
+	--body-font: 'Poppins', sans-serif;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1rem;
+	--normal-font-size: .938rem;
+	--small-font-size: .81rem;
+	--smallest-font-size: .75rem;
+
+	/*font-weight: */
+	--font-bold: 700;
+	--font-medium: 600;
+	--font-semi-bold: 500;
+	--font-thin: 400;
+
+
+}
+
+/********************* universal css ******************/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--text-color);
+}
+
+h1,h2,h3{
+	font-family: var(--heading-font);
+	font-weight: var(--font-medium);
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+
+/********************* reusealbe class ******************/
+.container{
+	max-width: 1160px;
+}
+
+.section{
+	padding: 5rem 1rem;
+}
+
+.section-title{
+	font-size: var(--h1-font-size);
+	font-family: var(--heading-font);
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+
+/********************* header ******************/
+
+.header-section {
+	overflow: hidden;
+	position: relative;
+}
+
+
+.header-logo {
+	width: 10%;
+	float: left;
+}
+
+
+.header-logo img {
+	width: 100%;
+}
+
+.header-nav {
+	width: 87%;
+	float: right;
+	text-align: right;
+}
+
+.header-nav ul li {
+	display: inline;
+	margin-right: 40px;
+}
+
+.header-nav ul li a {
+	text-transform: capitalize;
+	color: var(--menu-color);
+}
+
+.header-content {
+	padding: 40px 0;
+}
+
+.header-content {
+	padding: 40px 0;
+	margin: 0 auto;
+}
+
+.header-signup a {
+	background: ;
+	border: 1px solid #212832;
+	padding: 6px 20px;
+	border-radius: .3rem;
+}
+
+.language select {
+	background: transparent;
+	border: none;
+	font-size: 18px;
+	font-weight: var(--font-semi-bold);
+}
+
+
+/********************* hero sectio ******************/
+
+.hero-section {
+	margin: 0 auto;
+}
+
+.hero-content {
+	display: flex;
+	align-items: center;
+	width: 1160px;
+	position: relative;
+	z-index: 999;
+}
+
+.hero-texts {
+	width: 40%;
+}
+
+.hero-texts h1 {
+	font-size: 56px;
+	line-height: 58px;
+	color: var(--title-color);
+}
+
+.hero-texts h3 {
+	color: #DF6951;
+	margin-bottom: 20px;
+}
+
+.hero-img img {
+	width: 100%;
+	height: 450px;
+}
+
+.hero-img {
+	margin-left: 86px;
+}
+
+.hero-texts p {
+	text-align: ;
+	font-size: ;
+	margin: 20px 0px;
+}
+
+.more-btn {
+	background: #F1A501;
+	padding: 8px 20px;
+	border-radius: .4rem;
+	color: #fff;
+	font-weight: var(--font-semi-bold);
+	box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+
+.play-icon {
+	background: #DF6951;
+	padding: 10px 10px;
+	border-radius: 100px;
+	color: white;
+	margin-left: 11px;
+	box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+
+.hero-btns span {
+	color: var(--text-color);
+	text-transform: capitalize;
+	font-weight: var(--font-medium);
+}
+
+.bg-img {
+	position: absolute;
+	top: -104px;
+	right: -50px;
+	z-index: -1;
+}
+
+.plane.plane-left {
+	right: 11% !important;
+	width: 10%;
+	transform: rotate(-4deg);
+	height: 100px;
+	top: 16%;
+	z-index: -1;
+}
+
+.plane {
+	position: absolute;
+
+}
+
+.plane.plane-right {
+	top: 100px;
+	width: 10%;
+	right: 48%;
+	height: 100px;
+}

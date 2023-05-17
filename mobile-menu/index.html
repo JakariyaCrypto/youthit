@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container2">
+        <span id="click-menu">click</span>
+    </div>
+
+    <div class="mobile-menu" id="active-mo-menu">
+        <P id="close-icon">close</p>
+        <ul>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+            <li>home</li>
+        </ul>
+    </div>
+
+
+
+<style>
+.mobile-menu{
+    display: none;
+}
+
+*{
+
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@media (max-width: 768px){
+
+.mobile-menu {
+    display: none;
+    background: orange;
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+}
+.mobile-menu.active{
+    display: block;
+    top: 0px;
+    transition: .4s;
+}
+
+
+.mobile-menu p {
+    text-align: right;
+    padding: 5px 10px;
+    background: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: ;
+}
+
+
+
+}
+</style>
+
+
+<script type="text/javascript">
+    const active_menu = document.getElementById('click-menu');
+    const m_menu = document.getElementById('active-mo-menu');
+    const close = document.getElementById('close-icon');
+
+    active_menu.addEventListener('click', () => {
+        m_menu.classList.toggle('active');
+    });
+
+    close.addEventListener('click', () => {
+        m_menu.classList.remove('active');
+    });
+
+</script>
+</body>
+</html>

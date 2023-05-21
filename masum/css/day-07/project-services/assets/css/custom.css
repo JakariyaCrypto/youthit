@@ -1,0 +1,446 @@
+/* variable */
+:root{
+	/* --variable_name : property */
+	--btn-bg-color: orange;
+	--primary-bg-color: #ddd;
+	--h1-font-size: 2.5rem;
+	--sub-title-size: 1rem;
+
+	--h1-weight: 700;
+	--h2-weight: 600;
+	--sub-title-weight: 400;
+
+
+}
+
+
+
+
+/* menu */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-section {
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+
+.menu-content {
+	width: 1242px;
+	margin: auto;
+}
+
+  .logo {
+	width: 12%;
+	float: left;
+}
+
+.menu-item {
+	width: 67%;
+	float: left;
+	text-align: right;
+	padding-top: 15px;
+}
+  .user-item {
+    width: 20%;
+    float: right;
+    text-align: right;
+    padding-top: 15px;
+  }
+
+  .menu-item ul li {
+    display: inline;
+    margin-right: 21px;
+	
+  }
+
+  .user-item ul li {
+	display: inline;
+	margin-left: 14px;
+}
+
+  .menu-item ul li a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #111;
+	font-weight: 400;
+	text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.menu-item ul li a:hover {
+	transition: .3s linear;
+	color: orange;
+	border-bottom: 1px solid black;
+}
+
+.user-signup {
+	background: var(--btn-bg-color);
+	padding: 10px 20px;
+	border-radius: 5px 0px 5px;
+}
+
+
+.user-item ul li a {
+	font-size: 17px;
+	color: #111;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+
+/* drop menu */
+
+.menu-item ul li:hover .drop-down{
+	visibility: visible;
+	top: 13%;
+}
+
+
+.drop-down {
+	position: absolute;
+	top: 21%;
+	width: 200px;
+	background: white;
+	left: 57%;
+	z-index: 999999;
+	box-shadow: 0 0 5px 2px rgba(108, 106, 106, 0.1);
+	padding: 13px;
+	transition: .3s ease-in-out;
+	visibility: hidden;
+}
+
+
+
+.drop-down li {
+	text-align: left;
+	line-height: 27px;
+	display: block !important;
+}
+
+
+/* mega menu */
+
+.mega-menu {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 0 5px 2px rgba(108, 106, 106, 0.1);
+	position: absolute;
+	left: 0;
+	z-index: 999;
+	padding: 18px 0;
+	background: white;
+	top: 20%;
+	visibility: hidden;
+}
+
+.menu-item ul li:hover .mega-menu{
+	visibility: visible;
+	top: 13%;
+	transition: .3s linear;
+}
+
+
+.mega-item {
+	float: left;
+	width: 18%;
+	margin-left: 20px;
+}
+
+
+ii {
+	display: block;
+}
+
+
+.user-signup a {
+	color: white !important;
+	font-size: 19px !important;
+}
+
+.menu-section {
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0px;
+}
+
+
+/* hero section */
+
+.hero-section {
+	width: 100%;
+	overflow: hidden;
+}
+
+.hero-content {
+	position: relative;
+}
+
+.hero-banner img {
+	width: 100%;
+	height: 450px;
+}
+
+.hero-texts {
+	position: absolute;
+	top: 30%;
+	width: 70%;
+	left: 15%;
+	text-align: center;
+	z-index: 9;
+	color: black !important;
+}
+
+.hero-texts h2 {
+	color: white;
+	font-weight: bold;
+	font-size: 33px;
+}
+
+.hero-texts p {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 20px 0;
+}
+
+.hero-btn a {
+	background: var(--btn-bg-color);
+	padding: 10px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px 0px 10px 0px;
+}
+
+.hero-btn {
+	margin: 31px 0;
+}
+
+.hero-content::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	top: 0;
+	left: 0;
+	opacity: .4;
+	z-index: 0;
+}
+
+/* service */
+.service-section {
+	margin-top: 100px;
+	width: 1242px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.service-title h2 {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.service-title{
+	position: relative;
+}
+
+.service-title::before {
+	content: '';
+	width: 10%;
+	height: 2px;
+	background: #ddd;
+	position: absolute;
+	top: 60px;
+	left: 44%;
+}
+
+.service-title::after {
+	content: '';
+	width: 5%;
+	height: 2px;
+	background: orange;
+	position: absolute;
+	top: 60px;
+	left: 46.5%;
+}
+
+.service-content {
+	display: flex;
+	margin-top: 100px;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 100px;
+}
+
+.service-content .service-box {
+	box-shadow: 0px 0px 25px 0px rgba(40, 40, 40, 0.03);
+	width: 25%;
+	text-align: center;
+	padding: 15px 10px;
+	margin-bottom: 100px;
+	overflow: hidden;
+	transition: .3s linear;
+	object-fit: cover;
+}
+
+.service-content .service-box:hover {
+	background-color: violet;
+	border-radius: .5rem;
+	cursor: pointer;
+	transform: scale(1.02);
+	
+}
+
+.service-content .service-box img {
+	width: 120px;
+	height: 102px;
+}
+
+.service-content .service-box {
+	box-shadow: 0px 0px 25px 0px rgba(40, 40, 40, 0.03);
+	width: 25%;
+	text-align: center;
+	padding: 15px 10px;
+}
+
+.ser-btn {
+	margin: 25px 0;
+}
+
+
+.ser-btn a {
+	background: orange;
+	padding: 5px 10px;
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px 0px 10px 0px;
+}
+
+.service-content .service-box img {
+	width: 120px;
+	height: 102px;
+	border-radius: 100px 50px 70px;
+}
+
+.service-content .service-box:hover.service-box img{
+	border-radius: 0;
+}
+
+.service-content .service-box img{
+	background-color: orange;
+} 
+
+.service-box:hover.service-box:nth-child(4) img{
+	background-color:blue;
+} 
+
+.service-box:hover.service-box:nth-child(3) img{
+	background-color: red;
+} 
+
+.service-box:hover.service-box:nth-child(2) img{
+	background-color: yellow;
+} 
+
+.service-box:hover.service-box:nth-child(1) img{
+	background-color: gray;
+} 
+
+
+.service-box h3 {
+	color: #333;
+	margin: 10px 0;
+}
+
+.service-box:hover.service-box p{
+	color: white;
+}
+
+.tranform-content
+{
+	position: relative;
+}
+
+
+.play-icon {
+    color: #e83b3e;
+    font-size: 35px;
+    background: #fff;
+    position: absolute;
+    right: 196px;
+    bottom: 85px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.play-icon::before {
+    content: '';
+    background: #e83b3e;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50%;
+    animation: playbtn 1s ease-out infinite;
+}
+
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(1);
+        opacity: 0;
+	}40%{
+		transform: scale(1.3);
+        opacity: .5;
+	}
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    70%{
+        transform: scale(2);
+        opacity: .9;
+    }
+	100%{
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

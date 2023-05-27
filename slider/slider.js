@@ -24,7 +24,7 @@ function nextSlide(){
     sliderRow.style.transition = 'transform 0.4s ease-out';
     index++;
     sliderRow.style.transform = 'translateX('+ (- width * index) + 'px)';
-
+    dotActive();
 }
 
 // prev slide
@@ -36,6 +36,7 @@ function prevSlide(){
     sliderRow.style.transition = 'transform 0.4s ease-out';
     index--;
     sliderRow.style.transform = 'translateX('+ (- width * index) + 'px)';
+    dotActive();
 }
 
 
@@ -46,12 +47,14 @@ sliderRow.addEventListener('transitionend', function(){
         sliderRow.style.transition = 'none';
         index = slides.length - index;
         sliderRow.style.transform = 'translateX('+ (- width * index) + 'px)';
+        dotActive();
     }
 
     if(slides[index].id==='lastImgDoublecate') {
         sliderRow.style.transition = 'none';
         index = slides.length - 2;
         sliderRow.style.transform = 'translateX('+ (- width * index) + 'px)';
+        dotActive();
     }
 
 });
@@ -66,3 +69,21 @@ function autoslide(){
 }
 autoslide();
 
+// mouseove 
+const mainContent = document.querySelector('.container');
+mainContent.addEventListener('mouseover', function(){
+	clearInterval(deleteInterval);
+})
+
+mainContent.addEventListener('mouseout', autoslide);
+
+
+
+//dot
+
+function dotActive(){
+    for(i= 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+    dots[index - 1].className+= ' active';
+}
